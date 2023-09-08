@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./client.js"></script>
+    <style>
+        .chat-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .message-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .main-message-box {
+            border: 1px solid #ccc;
+            background-color: #0d6efd;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .join-message-box {
+            border: 1px solid #b6b5b5;
+            background-color: #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container chat-container mt-5">
+        <h1 class="text-center">Chat application</h1>
+        <div class="messages">
+
+        </div>
+        <div class="input-group mt-3">
+            <input id="message-input" type="text" class="form-control" placeholder="Type your message">
+            <button id="button-submit" class="btn btn-primary">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
